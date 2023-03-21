@@ -12,13 +12,7 @@ function solution(num, total)
 {
     let answer = [];
 
-    let plus = 0;
-
-    for(let i = 0 ; i<num ; i++)
-    {
-        total-=plus;
-        plus++;
-    }
+    total = total - (num-1)/2*num;
 
     let x = total/num;
 
