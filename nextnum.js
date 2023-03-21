@@ -15,7 +15,7 @@ function solution(common)
 
     if(sol==common[2]-common[1])
     {
-        answer = last+common[1]-common[0];
+        answer = last+sol;
     }
     else
     {
