@@ -10,14 +10,16 @@ common의 원소는 모두 정수입니다.
 function solution(common)
 {
     let answer=0;
+    const last = common[common.length-1];
+    let sol = common[1]-common[0];
 
-    if(common[1]-common[0]==common[2]-common[1])
+    if(sol==common[2]-common[1])
     {
-        answer = common[common.length-1]+common[1]-common[0];
+        answer = last+common[1]-common[0];
     }
     else
     {
-        answer = common[common.length-1]*(common[1]-common[0]);
+        answer = last*sol;
     }
 
     return answer;
