@@ -35,7 +35,7 @@ function solution(babbling)
     }
 
     
-    return babbling;
+    return answer;
 }
 
 console.log(solution(["aya", "yee", "u", "maa", "wyeoo"]));
