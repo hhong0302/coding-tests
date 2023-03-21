@@ -19,10 +19,14 @@ function solution(babbling)
     {
         for(let j = 0 ; j<baba.length ; j++)
         {
-            if(babbling[i].indexOf(baba[j])!=-1)
+            for(let k = 0 ; k<baba.length ; k++)
             {
-                babbling[i]=babbling[i].substring(0,babbling[i].indexOf(baba[j]))+babbling[i].substring(babbling[i].indexOf(baba[j])+baba[j].length);
+                if(babbling[i].indexOf(baba[k])==0)
+                {
+                    babbling[i] = babbling[i].substring(baba[k].length);
+                }
             }
+            
         }
         if(babbling[i]=="")
         {
@@ -31,7 +35,9 @@ function solution(babbling)
     }
 
     
-    return answer;
+    return babbling;
 }
 
-console.log(solution(["ayaaye" , 'ayayewooma' , 'ayawoooma' , 'ayawooyema']));
+console.log(solution(["aya", "yee", "u", "maa", "wyeoo"]));
+console.log(solution(["ayaye", "uuuma", "ye", "yemawoo", "ayaa"]));
+console.log(solution(["yayae" , 'ayayewooma' , 'ayawoooma' , 'ayawooyema']));
