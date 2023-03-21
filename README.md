@@ -1,2 +1,2 @@
-# coding tests
+# coding tests for my solutions
  
