@@ -27,6 +27,3 @@ function solution(n) {
 }
 
 console.log(solution(40));
-
-
-13
